@@ -13,8 +13,11 @@
             /* Hauteur complète de la vue */
             margin: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 20px;
+            /* Espacement entre les éléments */
         }
 
         .input-wrapper {
@@ -52,6 +55,15 @@
             cursor: pointer;
             /* Cursor pointer pour indiquer la fonctionnalité cliquable */
         }
+
+        .info-text {
+            color: #ccc;
+            /* Couleur du texte claire pour contraster avec le fond sombre */
+            font-size: 14px;
+            /* Taille du texte */
+            text-align: center;
+            /* Alignement du texte au centre */
+        }
     </style>
 </head>
 
@@ -60,20 +72,11 @@
         <input type="text" placeholder="Entrez votre texte ici" id="inputField">
         <button class="submit" onclick="handleClick()">Go</button>
     </div>
-    <script>
-        function handleClick() {
-            // Fonction appelée lors du clic sur le bouton ou lors de la pression sur 'Entrée'
-            var inputValue = document.getElementById('inputField').value;
-            alert("Vous avez entré : " + inputValue);
-        }
-
-        // Ajouter un écouteur d'événements pour la touche 'Entrée'
-        document.getElementById('inputField').addEventListener('keypress', function (event) {
-            if (event.key === 'Enter') {
-                handleClick();
-            }
-        });
-    </script>
+    <br /><br /><br />
+    <div class="info-text" id="suggestion">
+        Saisissez quelque chose dans le champ ci-dessus et appuyez sur Go ou Entrée.
+    </div>
 </body>
+<script src="js/functions/gpt/gpt.js"></script>
 
 </html>
