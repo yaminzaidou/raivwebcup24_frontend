@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec Input et Bouton</title>
+    <style>
+        body {
+            background-color: #333;
+            /* Couleur de fond sombre */
+            height: 100vh;
+            /* Hauteur complète de la vue */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input-wrapper {
+            position: relative;
+            width: 50vw;
+            /* Largeur à 50% de la largeur de la fenêtre */
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            height: 40px;
+            /* Hauteur fixe du champ de texte */
+            width: 100%;
+            /* Largeur complète du conteneur */
+            box-sizing: border-box;
+            /* Inclut padding dans la largeur */
+            border: none;
+            border-radius: 15px 0 0 15px;
+            /* Coins arrondis sauf le coin droit */
+            font-size: 16px;
+        }
+
+        button.submit {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 40px;
+            border: none;
+            border-radius: 0 15px 15px 0;
+            /* Coins arrondis sur le côté droit */
+            background-color: #555;
+            /* Couleur de fond du bouton */
+            color: white;
+            /* Couleur du texte */
+            cursor: pointer;
+            /* Cursor pointer pour indiquer la fonctionnalité cliquable */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-wrapper">
+        <input type="text" placeholder="Entrez votre texte ici" id="inputField">
+        <button class="submit" onclick="handleClick()">Go</button>
+    </div>
+    <script>
+        function handleClick() {
+            // Fonction appelée lors du clic sur le bouton ou lors de la pression sur 'Entrée'
+            var inputValue = document.getElementById('inputField').value;
+            alert("Vous avez entré : " + inputValue);
+        }
+
+        // Ajouter un écouteur d'événements pour la touche 'Entrée'
+        document.getElementById('inputField').addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                handleClick();
+            }
+        });
+    </script>
+</body>
+
+</html>
