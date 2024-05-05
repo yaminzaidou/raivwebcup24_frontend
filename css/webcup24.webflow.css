@@ -341,8 +341,28 @@ a {
   font-weight: 700;
 }
 
+.btn.btn--hero.gpt.payement.position.hvm {
+  border-color: var(--black);
+  color: var(--black);
+}
+
 .btn.btn--hero.gpt.payement.steps {
   margin-top: 17px;
+}
+
+.btn.btn--hero.gpt.payement.steps.hvm {
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.btn.btn--hero.gpt.payement.valide {
+  border-color: var(--black-2);
+  color: var(--black-2);
+}
+
+.btn.btn--hero.gpt.modale {
+  border-color: var(--black);
+  color: var(--black);
 }
 
 .btn.btn--hero.contact {
@@ -4088,6 +4108,10 @@ a {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
+}
+
+.div-block-4 {
+  display: none;
 }
 
 .image-4 {
