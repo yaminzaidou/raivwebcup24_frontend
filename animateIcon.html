@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carte Animée</title>
+    <style>
+        .map-container {
+            position: relative;
+            width: 600px;
+            /* Ajustez selon la taille de votre image */
+            height: 300px;
+            /* Ajustez selon la taille de votre image */
+        }
+
+        .world-map {
+            width: 100%;
+            height: auto;
+        }
+
+        .icon {
+            position: absolute;
+            font-size: 24px;
+            user-select: none;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+                /* Monter de 10 pixels */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map-container">
+        <img src="images/new/world-map-continents-oceans.webp" alt="Carte du monde" class="world-map">
+        <div class="icon" id="icon1">📍</div>
+        <div class="icon" id="icon2">✈️</div>
+        <div class="icon" id="icon3">🚢</div>
+    </div>
+    <script src="js/functions/map/map.js"></script>
+</body>
+
+</html>
