@@ -131,7 +131,7 @@ async function getGuardianAngel(userProblem) {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer `,
+            'Authorization': `Bearer sk-proj-`,
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
