@@ -72,6 +72,7 @@ const guardianAngels = [
     }
 ];
 
+var angeId = "";
 
 function handleClick() {
     // Fonction appelée lors du clic sur le bouton ou lors de la pression sur 'Entrée'
@@ -115,6 +116,7 @@ function handleClick() {
                 imgElement.src = guardianAngels[6].img;
                 header.textContent = guardianAngels[6].texte; // Set new text content
         }
+        angeId = response;
         //document.getElementById('suggestion').innerText = 'L’ange gardien recommandé pour vous est : ' + response;
     });
 }
@@ -147,3 +149,16 @@ async function getGuardianAngel(userProblem) {
     const data = await response.json();
     return data.choices[0].message.content; // Assurez-vous de traiter correctement la réponse
 }
+// Initialisation des positions et démarrage de l'animation
+window.onload = function () {
+    document.getElementById("modale-gpt-result").style.display = "none";
+    //animateIcons();
+};
+
+
+document.getElementById('commandbtn').addEventListener('click', function (event) {
+    // Check a condition; it could be anything you define
+    event.preventDefault();
+    window.location.href = '';
+    window.location.href = '../steps-commande.html?angeId=' + angeId;
+});

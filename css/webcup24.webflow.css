@@ -81,22 +81,6 @@
   box-shadow: 0 0 3px 1px #3898ec;
 }
 
-.w-form-formradioinput--inputType-custom {
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-}
-
-.w-form-formradioinput--inputType-custom.w--redirected-focus {
-  box-shadow: 0 0 3px 1px #3898ec;
-}
-
-.w-form-formradioinput--inputType-custom.w--redirected-checked {
-  border-width: 4px;
-  border-color: #3898ec;
-}
-
 @media screen and (max-width: 991px) {
   .w-layout-blockcontainer {
     max-width: 728px;
@@ -360,6 +344,10 @@ a {
   color: var(--black-2);
 }
 
+.btn.btn--hero.gpt.payement.valide.acceuil {
+  margin-top: 20px;
+}
+
 .btn.btn--hero.gpt.modale {
   border-color: var(--black);
   color: var(--black);
@@ -369,7 +357,8 @@ a {
   color: var(--black);
   border-width: 2px;
   border-color: #000;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
 }
 
 .btn.btn--slim {
@@ -1014,7 +1003,7 @@ a {
 }
 
 .footer__nav-link {
-  color: #878f9a;
+  color: var(--white);
   letter-spacing: .1em;
   text-transform: uppercase;
   margin-bottom: 24px;
@@ -2716,7 +2705,7 @@ a {
 }
 
 .brix---text-area-2 {
-  border: 1px solid var(--elements-webflow-library--neutral--300);
+  border: 1px solid var(--light-slate-grey);
   background-color: var(--elements-webflow-library--neutral--100);
   box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
   border-radius: 22px;
@@ -2750,7 +2739,7 @@ a {
 }
 
 .brix---input-2 {
-  border: 1px solid var(--elements-webflow-library--neutral--300);
+  border: 1px solid var(--light-slate-grey);
   background-color: var(--elements-webflow-library--neutral--100);
   box-shadow: 0 2px 7px 0 var(--elements-webflow-library--general--shadow-02);
   border-radius: 100px;
@@ -3054,6 +3043,7 @@ a {
   justify-content: start;
   align-self: center;
   justify-items: start;
+  display: none;
 }
 
 .brix---color-neutral-808 {
@@ -3157,7 +3147,7 @@ a {
   background-image: url('../images/Noise_1Noise.png');
   background-position: 0 0;
   background-size: auto;
-  padding-top: 53px;
+  padding-top: 193px;
   padding-bottom: 176px;
   position: relative;
 }
@@ -3228,7 +3218,7 @@ a {
 
 .section-3 {
   z-index: 9999;
-  background-color: rgba(34, 34, 34, .51);
+  background-color: rgba(34, 34, 34, .89);
   justify-content: center;
   align-items: center;
   transition: all .2s;
@@ -3318,6 +3308,7 @@ a {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 31px;
   position: relative;
 }
 
@@ -3476,7 +3467,7 @@ a {
 .image {
   position: absolute;
   top: auto;
-  bottom: 68%;
+  bottom: 76%;
   left: auto;
   right: -3%;
 }
@@ -3847,7 +3838,7 @@ a {
 .text-field {
   color: #7f58e2;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid rgba(0, 0, 0, .05);
+  border: 2px solid rgba(0, 0, 0, .71);
   border-radius: 10px;
   height: 60px;
   margin-bottom: 0;
@@ -3886,8 +3877,8 @@ a {
   flex: 0 auto;
   justify-content: center;
   align-items: center;
-  min-height: 257px;
-  max-height: 200px;
+  min-height: 128px;
+  max-height: 179px;
   display: flex;
 }
 
@@ -3917,8 +3908,10 @@ a {
   z-index: 2;
   width: 100%;
   max-width: 1200px;
+  margin-bottom: 86px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 197px;
   position: relative;
 }
 
@@ -4062,6 +4055,8 @@ a {
 .checkbox-field {
   align-items: flex-start;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 20px;
   font-size: 16px;
   font-weight: 700;
@@ -4133,6 +4128,9 @@ a {
 .container-6 {
   z-index: 3;
   text-align: center;
+  margin-top: 49px;
+  margin-bottom: 56px;
+  padding-top: 178px;
   position: relative;
 }
 
@@ -4154,6 +4152,44 @@ a {
 
 .bold-text {
   text-align: center;
+}
+
+.section-4 {
+  z-index: 3;
+  position: relative;
+}
+
+.heading-7 {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 70px;
+}
+
+.container-7 {
+  margin-bottom: 86px;
+  padding-top: 153px;
+}
+
+.text-block-3 {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.heading-8 {
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 58px;
+}
+
+.section-5 {
+  height: 100vh;
+  padding-top: 137px;
+}
+
+.text-block-4 {
+  margin-top: 17px;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -4207,6 +4243,10 @@ a {
 
   .brix---heading-h1-size {
     font-family: Poppins, sans-serif;
+  }
+
+  .brix---section {
+    padding-top: 65px;
   }
 
   .brix---paragraph-default-2 {
@@ -4273,7 +4313,15 @@ a {
   }
 
   .section-3 {
-    display: flex;
+    display: none;
+  }
+
+  .m-container-large {
+    padding-top: 0;
+  }
+
+  .m-section-large-2 {
+    padding-top: 68px;
   }
 
   .heading-5 {
@@ -4309,6 +4357,7 @@ a {
 
   .container-5 {
     margin-bottom: 85px;
+    padding-top: 58px;
   }
 
   .form-heading {
@@ -4345,9 +4394,32 @@ a {
     font-family: Poppins, sans-serif;
     font-weight: 400;
   }
+
+  .container-6 {
+    padding-top: 0;
+  }
+
+  .container-7 {
+    margin-bottom: 86px;
+    padding-top: 39px;
+  }
+
+  .text-block-3 {
+    text-align: left;
+    font-family: Poppins, sans-serif;
+    font-size: 17px;
+  }
+
+  .section-5 {
+    padding-top: 5px;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .main {
+    padding-top: 105px;
+  }
+
   .footer {
     background-image: url('../images/Noise_1Noise.png'), radial-gradient(circle at 100% -30%, rgba(193, 24, 34, .6), rgba(193, 24, 34, 0) 40%);
     background-position: 0 0, 0 0;
@@ -4924,6 +4996,11 @@ a {
   .hero-img-wrap {
     width: 50%;
     margin-top: 0;
+  }
+
+  .heading-8 {
+    font-size: 49px;
+    line-height: 1.2em;
   }
 }
 
@@ -5788,6 +5865,12 @@ a {
   .form-block-2 {
     padding: 40px 40px 50px;
   }
+
+  .text-block-3 {
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -6437,6 +6520,14 @@ a {
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .text-block-2 {
+    font-size: 17px;
+  }
+
+  .bold-text {
+    font-size: 38px;
   }
 }
 
